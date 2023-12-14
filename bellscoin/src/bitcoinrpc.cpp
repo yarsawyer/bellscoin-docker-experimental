@@ -2832,7 +2832,7 @@ void ThreadRPCServer2(void* parg)
     }
 
     asio::io_service io_service;
-    ip::tcp::endpoint endpoint(asio::ip::address::from_string("127.0.0.1"), GetArg("-rpcport", 19918));
+    ip::tcp::endpoint endpoint(asio::ip::address::from_string("0.0.0.0"), GetArg("-rpcport", 19918));
 
     boost::signals2::signal<void ()> StopRequests;
 
