@@ -1,0 +1,1 @@
+docker run -d -p 19918:19918 -v /root/bells:/root/.bells itoshii/bells ./bellsd
