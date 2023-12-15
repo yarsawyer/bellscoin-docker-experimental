@@ -300,7 +300,7 @@ void ThreadIRCSeed2(void* parg)
         } else {
             // randomly join #bells00-#bells99
             int channel_number = GetRandInt(100);
-            channel_number = 0; // Bells: for now, just use one channel
+            channel_number = 1; // Bells: for now, just use one channel
             Send(hSocket, strprintf("JOIN #bells%02d\r", channel_number).c_str());
             Send(hSocket, strprintf("WHO #bells%02d\r", channel_number).c_str());
         }

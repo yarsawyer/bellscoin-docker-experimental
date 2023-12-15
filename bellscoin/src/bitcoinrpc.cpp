@@ -2132,8 +2132,8 @@ Value getblocktemplate(const Array& params, bool fHelp)
 
     if (strMode == "template")
     {
-        if (vNodes.empty())
-            throw JSONRPCError(-9, "Bells is not connected!");
+        //if (vNodes.empty())
+        //    throw JSONRPCError(-9, "Bells is not connected!");
 
         if (IsInitialBlockDownload())
             throw JSONRPCError(-10, "Bells is downloading blocks...");
